@@ -4,10 +4,8 @@ function barcodescanner(){
 
  cordova.plugins.barcodeScanner.scan(
       function (result) {
-          alert("We got a barcode\n" +
-                "Result: " + result.text + "\n" +
-                "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
+          alert("نتیجه\n" +
+                "Result: " + result.text);
       },
       function (error) {
           alert("Scanning failed: " + error);
